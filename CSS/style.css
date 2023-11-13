@@ -1,0 +1,25 @@
+.container{
+    padding: 10px;
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: darkgray;
+    margin-top: 20px;
+}
+button{
+    width: 40px;
+    margin-bottom: 5px;
+    border-radius: 20%;
+    margin-top: 2px;
+    background-color:yellow ;
+}
+input{
+    width: 100%;
+    background-color: green;
+}
+button:hover{
+    color: orangered;
+}
+.op-btn{
+    background-color: blue;
+}
