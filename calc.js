@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const answerField = document.getElementById('answer');
+    let answerField = document.getElementById('answer');
     let currentInput = '';
 
     function updateAnswerField() {
@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function () {
             updateAnswerField();
         }
     }
-
+// fetches button with id 'clear' and when clicked clears display
     document.getElementById('clear').addEventListener('click', clearInput);
-
+// fetches button with id 'eqaul' and when clicked calculates the answer
     document.getElementById('equal').addEventListener('click', calculate);
 
-    const numberButtons = document.querySelectorAll('.num-btn');
+    let numberButtons = document.querySelectorAll('.num-btn');
     numberButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             currentInput += button.getAttribute('data-value');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    const operatorButtons = document.querySelectorAll('.op-btn');
+    let operatorButtons = document.querySelectorAll('.op-btn');
     operatorButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             currentInput += button.getAttribute('data-operator');
