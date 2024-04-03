@@ -1,25 +1,38 @@
+body{
+    background-color: black;
+}
 .container{
     padding: 10px;
     width: fit-content;
-    border: 1px solid black;
+    border: 3px solid red;
     border-radius: 10%;
-    background-color: darkgray;
+    background-color: black;
     margin-top: 20px;
 }
 button{
-    width: 40px;
+    width: 60px;
+    height: 60px;
     margin-bottom: 5px;
-    border-radius: 20%;
+    border-radius: 200px;
     margin-top: 2px;
-    background-color:yellow ;
+    color: white;
+    background-color:black ;
+    border: 2px solid red;
 }
 input{
     width: 100%;
-    background-color: green;
+    height: 30px;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+    color: white;
 }
 button:hover{
     color: orangered;
+    background-origin: black 
 }
 .op-btn{
     background-color: blue;
+    /* border: 5px solid white; */
+    border-radius: 60px;
 }
